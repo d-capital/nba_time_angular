@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class NbaServiceService {
-  private apiUrl = '/api/static/json/staticData/scheduleLeagueV2.json';
+  private apiUrl = 'https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json';
   constructor(private http: HttpClient) {}
 
   getData(): Observable<any> {
