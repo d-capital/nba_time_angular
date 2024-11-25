@@ -1,0 +1,6 @@
+<div *ngIf="data.length === 0">Loading data...</div>
+<ul *ngIf="data.length > 0">
+  <li *ngFor="let item of data">
+    {{ item.homeTeam.teamCity }} {{ item.homeTeam.teamName }} vs. {{ item.awayTeam.teamCity }} {{ item.awayTeam.teamName }} : {{ item.gameDateTimeUTC}}
+  </li>
+</ul>
